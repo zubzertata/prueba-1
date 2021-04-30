@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Noticias de Waifus</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a href="index.html"><img class="logo" src="images/Logo.png" alt=""></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-1">
+          <li class="nav-item active dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categoria
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="hashtag-1.html">hashtag 1</a>
+              <a class="dropdown-item" href="hashtag-2.html">hashtag 2</a>
+              <a class="dropdown-item" href="hashtag-3.html">hashtag 3</a>
+              <a class="dropdown-item" href="hashtag-4.html">hashtag 4</a>
+              <a class="dropdown-item active" href="hashtag-5.html">hashtag 5</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div><input class="busqueda mr-sm-2" type="search" placeholder=" Buscador..." aria-label="buscar" (keyup)="buscarPalabra(buscarTexto.value)" #buscarTexto width="30px"></div>
+          </li>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto " >
+          <li class="nav-item">
+
+            <li class="nav-item">
+              <a class="nav-link" href="create-user.html">Crear Usuario</a>
+            </li>
+            <!-- Boton de inicio (abre) -->
+            <button onclick="document.getElementById('id01').style.display='block'">Inicio</button> 
+             <!-- The Modal -->
+            <div id="id01" class="modal">
+               <span onclick="document.getElementById('id01').style.display='none'"
+                class="close" title="Close Modal">&times;</span>
+                 <!-- Modal Content -->
+                  <form class="modal-content animate" action="/action_page.php">
+                    <div class="imgcontainer" >
+                       <img src="https://i.etsystatic.com/9416987/r/il/8c3a1c/1375381633/il_570xN.1375381633_j3sk.jpg" alt="Avatar" class="avatar">
+                     </div>
+                     <div class="container">
+                       <label for="uname"><b>Usuario</b></label>
+                       <input type="text" placeholder="Ingrese el usuario" name="uname" required>
+                    
+                       <label for="psw"><b>Clave</b></label>
+                       <input type="password" placeholder="Ingrese la contraseña?" name="psw" required>
+                    
+                       <a href="index-editor.html"><input class="button" type="button"  value="Iniciar"></a>
+                         <label>
+                           <input type="checkbox" checked="checked" name="remember"> Recuerdame
+                          </label>
+                      </div>
+                     <div class="container" style="background-color:#f1f1f1">
+                         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                            <span class="psw"> <a href="#">has olvidado la contraseña?</a></span>
+                     </div>
+                    </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Imagenes del Carrusel -->   
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Primera Imagen -->
+        <div class="carousel-item active" style="background-image: url('https://i.etsystatic.com/9416987/r/il/8c3a1c/1375381633/il_570xN.1375381633_j3sk.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Waifu nº1</h3>
+            <p>Esta noticia no tiene nada de importante.</p>
+          </div>
+        </div>
+        <!-- Segunda Imagen -->
+        <div class="carousel-item" style="background-image: url('https://pm1.narvii.com/6826/ef5b64c166219a7937bb529e4a6f18c1a863a534v2_hq.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Waifu nº2</h3>
+            <p>Esta noticia no tiene nada de importante.</p>
+          </div>
+        </div>
+        <!-- Tercera Imagen -->
+        <div class="carousel-item" style="background-image: url('https://cdn.alfabetajuega.com/wp-content/uploads/2020/10/Rem-ReZero.png')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Waifu nº3</h3>
+            <p>Esta noticia no tiene nada de importante.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </header>
+
+  <!-- Nombre del contenido -->
+  <div class="container">
+
+    <h1 class="my-4">Noticias Destacadas</h1>
+
+    <!-- Noticias Destacadas -->
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="new-1.html"><img class="card-img-top" src="https://i.etsystatic.com/9416987/r/il/8c3a1c/1375381633/il_570xN.1375381633_j3sk.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="new-1.html">Waifu nº</a>
+            </h4>
+            <p class="card-text">Esta noticia no tiene nada de importante</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="new-2.html"><img class="card-img-top" src="https://pm1.narvii.com/6826/ef5b64c166219a7937bb529e4a6f18c1a863a534v2_hq.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="new-2.html">Waifu nº</a>
+            </h4>
+            <p class="card-text">Esta noticia no tiene nada de importante.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="new-3.html"><img class="card-img-top" src="https://cdn.alfabetajuega.com/wp-content/uploads/2020/10/Rem-ReZero.png" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="new-3.html">Waifu nº</a>
+            </h4>
+            <p class="card-text">Esta noticia no tiene nada de importante</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="new-4.html"><img class="card-img-top" src="https://i.pinimg.com/originals/71/a1/ad/71a1ad55e9e0bd2bfbb35c1469d3068a.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="new-4.html">Waifu nº</a>
+            </h4>
+            <p class="card-text">Esta noticia no tiene nada de importante.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Waifu nº</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Waifu nº</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Waifu nº</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Waifu nº</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius adipisci dicta dignissimos neque animi ea, veritatis, provident hic consequatur ut esse! Commodi ea consequatur accusantium, beatae qui deserunt tenetur ipsa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Portfolio Section -->
+    <h2>Portfolio Heading</h2>
+
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://www.instagram.com/">Project One</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Project Two</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Project Three</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Project Four</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Project Five</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Project Six</a>
+            </h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="dropdown-toggle-split bg-dark ">
+    <div class="container">
+      <p class="auto text-center text-white">Buena Caurios &copy; Gran Grupo ----</p>
+    </div> 
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -80,8 +80,7 @@ body {
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  margin: 10px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -89,18 +88,18 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #b91dac;
+  background-color: #918c8c;
   color: white;
   padding: 5px 10px;
   margin: 4px 0;
   border: none;
   cursor: pointer;
   width: 70px;
-  border-radius: 40px
+  border-radius: 40px;
 }
 
 .button {
-  background-color: #b91dac;
+  background-color: #fc6625;
   color: white;
   padding: 5px 10px;
   margin: 4px 0;
@@ -295,7 +294,7 @@ img{
 
 
 footer{
-  margin-top:180px;
+  margin-top:100px;
   width:100%;
   height:40;
 
@@ -305,14 +304,14 @@ footer{
 }
 
 .logo{
-  width: 50px;margin: 1px auto;border: 1px ;border-radius:1px
+  width: 40px;margin: 1px auto;border: 1px ;border-radius:1px
 }
 
  /* user */
 
-.candidates-profile-bg {
+ .candidates-profile-bg {
   padding: 50px 0px 50px 0px;
-  background-image: url("https://www.bootdey.com/img/Content/bg1.jpg");
+  background-image: url("https://c.wallhere.com/photos/35/e7/1920x1080_px_journal-1199996.jpg!d");
   background-size: cover;
   position: relative;
   background-position: center center;
@@ -343,4 +342,114 @@ footer{
   border: 1px solid rgba(255, 255, 255, 0.7);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+.formulario {
+  margin: 100px;
+  padding: 5px;
+
+}
+
+.portfolio-item:hover {
+  transition: all 0.5s;
+  opacity: 0.85;
+
+}
+
+.obligatorio{
+  color:red
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+a{
+  color: #0680F9;
+}
+
+h3{
+  color: #EEEDEF;
+}
+
+.buttonedit{
+  background-color: #fc6625;
+  color: white;
+  margin: auto;
+  width: 34px;
+  border-radius: 40px;
+  text-align:start
+
+}
+
+.buttonedittxt{
+  background-color: #0680f9;
+  width: auto;
+  border-radius: 34px;
+  color: white;
+  align-items: center;
+  margin: auto;
+  border-style:inset
+}
+
+/* notificacion */
+
+.fa{
+  line-height:30px;
+  font-size:30px;
+  display:inline-bloxk;
+  width:35px;
+  height:35px;
+}
+.hidden{
+  display:none;
+}
+
+input[type=checkbox] + label {
+  position:relative;
+} 
+
+input[type=checkbox]:checked + label {
+  animation: closing 0.3s forwards ease-in-out,
+             moving 0.3s forwards ease-in-out;
+} 
+.pointer-cursor{
+   cursor: pointer; cursor: hand;
+}
+.close{
+
+    float:right;
+    color: #b94b45;
+    cursor: pointer; cursor: hand;
+}
+
+.alert-message{
+  background-color: #f2dede;
+  border: 1px solid rgba(#34495e, 0.25);
+  color: #b94b45;
+  border-radius: 3px;
+  line-height:30px;
+  position: absolute;
+  top: 0; left: 0;
+  display:block;
+  width:100%;
+  padding: 12px;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, .9);
+  box-shadow: 0px 10px 50px rgba(0,0,0,.6);
+  background:#34495e;
+}
+
+@keyframes closing {
+  from {
+    opacity: 1; 
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes moving {
+  0%, 90% { top: 0; left: 0; }
+  100%  { top: -100px; left: 0; }
 }

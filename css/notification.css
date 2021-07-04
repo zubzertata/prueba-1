@@ -1,0 +1,31 @@
+.modal {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.637) 0%, rgba(112, 114, 114, 0.164) 100.2%)
+}
+
+
+
+.img-thumbnail {
+    border: none;
+    left: 50px;
+    background-position: center center;
+}
+
+.headr {
+    font-size: 22px;
+    font-weight: 900;
+    color: #000000
+}
+
+.modal-title {
+    color: #000000
+}
+
+.btncancel {
+    width: 150px;
+    background-color: #a51f1f;
+}
+.btnacept {
+    width: 150px;
+    background-color: #23a51f;
+    
+}

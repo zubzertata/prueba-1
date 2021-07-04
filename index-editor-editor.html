@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Caos News</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+  <!-- Buscador -->
+  <link href="css/Buscador.css" rel="stylesheet"/>
+
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav
+  class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top"
+>
+  <div class="container">
+    <a href="index-editor-editor.html"
+      ><img class="logo" src="images/logo.jpg" alt=""
+    /></a>
+    <button
+      class="navbar-toggler navbar-toggler-right"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-1">
+        <li class="nav-item active dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownPortfolio"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Categorias
+          </a>
+          <div
+            class="dropdown-menu dropdown-menu-right"
+            aria-labelledby="navbarDropdownPortfolio"
+          >
+            <a class="dropdown-item" href="index-invitado.html">Política</a>
+            <a class="dropdown-item" href="index-invitado.html">Economía</a>
+            <a class="dropdown-item" href="index-invitado.html">Cultural</a>
+            <a class="dropdown-item" href="index-invitado.html">Científica</a>
+            <a class="dropdown-item" href="index-invitado.html">Policial</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <div>
+            <div class="autocomplete" >
+              <input id="myInput" class="buscador" name="mySearch" placeholder="Buscar..." />
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"></li>
+        <li class="nav-item">
+          <a class="nav-link" href="create-user.html">Bienvenido, Periodista</a>
+        </li>
+        <!-- Boton de inicio (abre) -->
+        <button
+          onclick="document.getElementById('id01').style.display='block'"
+        >
+          Salir
+        </button>
+        <!-- The Modal -->
+        <div id="id01" class="modal">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <!-- Modal Content -->
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+              <img
+                src="images/logo.jpg"
+                alt="Avatar"
+                class="avatar"
+              />
+            </div>
+            <div class="container">
+              <label for="uname"><b>Usuario</b></label>
+              <input
+                type="text"
+                placeholder="Ingrese el usuario"
+                name="uname"
+                required
+              />
+
+              <label for="psw"><b>Clave</b></label>
+              <input
+                type="password"
+                placeholder="Ingrese la contraseña"
+                name="psw"
+                required
+              />
+
+              <a href="index-usuario.html"
+                ><input class="button" type="button" value="Iniciar"
+              /></a>
+              <label>
+                <input type="checkbox" checked="checked" name="remember" />
+                Recuerdame
+              </label>
+            </div>
+            <div class="container" style="background-color: #f1f1f1">
+              <button
+                type="button"
+                onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn"
+              >
+                Cancelar
+              </button>
+              <span class="psw">
+                <a href="#">has olvidado la contraseña?</a></span
+              >
+            </div>
+          </form>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <header>
+      <!-- Nombre Del Usuario -->
+      
+    <section class="candidates-profile-bg">
+      <div class="bg-overlay"></div>
+         <button type="button" class="buttonedit" style="float: right;">
+        <svg width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="1 1 16 16" >
+              <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
+              <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
+              </svg>
+      </button>
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-md-6">
+                  <div class="candidates-profile-details text-center">
+                      <img src="https://negocios.uai.cl/assets/uploads/2021/04/ricardo-senerman-232x232-c-default.jpg" class="img-fluid d-block mx-auto rounded-circle img-thumbnail mb-4">
+                      <h4 class="text-white candidates-profile-name mb-2">Carlos Martinez</h4>
+                      <p class="text-white-50 mb-2"><i class="mdi mdi-bank mr-2"></i>Periodista Senior</p>
+                      <p class="text-white candidates-profile-name mb-2"></i>Noticias Totales: 4</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+</section>
+  </header>
+  <!-- Alerta noticia rechazada -->
+  <div>
+    <input type="checkbox" id="one" class="hidden" name="ossm">  
+    <label for="one" class="alert-message">
+      <strong> <i class="fa fa-heart"></i> Atencion </strong> Tiene una noticia rechazada por el Administrador...
+      <span class="close">×</button>
+    </label> 
+  </div> 
+  <!-- Nombre del contenido -->
+  <div class="container">
+
+    <h1 class="my-4">Noticias Creadas</h1>
+
+    <!-- Seccion Noticias Creadas -->
+    
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="new-1.html"><img class="card-img-top" src="https://www.cooperativa.cl/noticias/site/artic/20210505/imag/foto_0000000920210505194942.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="new-1.html">Economía</a>
+              <button type="button" class="buttonedittxt" style="float: inherit;" >
+                <svg width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="1 1 16 16"  >
+                      <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
+                      <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
+                      </svg>
+                      
+              </button>
+              
+            </h4>
+            <p class="card-text">Cámara Baja Aprobó bono de 200 mil pesos y rechazó 2% de
+              cotización Adicional</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="new-2.html"><img class="card-img-top" src="https://www.cooperativa.cl/noticias/site/artic/20210505/imag/foto_0000000120210505173726.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="new-2.html">Policial</a>
+              <button type="button" class="buttonedittxt" style="float: inherit;">
+                <svg width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="1 1 16 16" >
+                      <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
+                      <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
+                      </svg>
+              </button>
+            </h4>
+            <p class="card-text">Pablo Chill-E fue detenido tras huida de Carabineros en Auto
+              Robado.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+        
+        <div class="card h-100">          
+          <a href="new-3.html"><img class="card-img-top" src="https://www.cooperativa.cl/noticias/site/artic/20210505/imag/foto_0000000120210505141044.jpg" alt=""></a>
+         
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="new-3.html">Economía</a>
+              <button type="button" class="buttonedittxt" style="float: inherit;" >
+                <svg width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="1 1 16 16"  >
+                      <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
+                      <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
+                      </svg>
+                      
+              </button>
+            </h4>
+            <p class="card-text"> BancoEstado: Clientes recibieron nueva tarjeta de CuentaRUT con
+                nombres escritos con plumón</p>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="new-4.html"><img class="card-img-top" src="https://plataformacientifica.cl/wp-content/uploads/2020/02/videojuegos3-800x480.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="new-4.html">Actualidad</a>
+              <button type="button" class="buttonedittxt" style="float: inherit;" >
+                <svg width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="1 1 16 16"  >
+                      <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
+                      <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
+                      </svg>
+                      
+              </button>
+            </h4>
+            <p class="card-text"> Videojuegos educativos para aprender ciencias en verano.</p>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+  </div>
+
+    <!-- Footer -->
+    <footer class="dropdown-toggle-split bg-dark ">
+      <div class="container">
+        <p class="auto text-center text-white">--- CAOS NEWS ---</p>
+      </div> 
+    </footer>
+  
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/Buscador.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  
+  </body>
+  
+  </html>
+  
